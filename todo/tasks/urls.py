@@ -19,5 +19,6 @@ from . import views
 urlpatterns = [
     path('delete/<int:id>/', views.delete, name='delete_task'),
     path('complete/<int:id>/', views.complete, name='completed_task'),
+    path('test', views.test, name='health'),
     path('', views.tasks, name='tasks'),
 ]
